@@ -1,0 +1,56 @@
+body {
+    background-image: url("../image/map.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.covid1 {
+    width: 4rem;
+    height: 4rem;
+}
+
+.covid2 {
+    width: 6rem;
+    height: 6rem;
+}
+
+.covid3 {
+    width: 8rem;
+    height: 8rem;
+}
+
+.sideA {
+    transform: scaleX(1);
+}
+
+.sideB {
+    transform: scaleX(-1);
+}
+
+.panel {
+    position: absolute;
+    width: 20rem;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid var(--color-text-red);
+    background: var(--color-background-dark);
+    color: var(--color-text-light);
+    opacity: 0.7;
+}
+
+.life {
+    float: left;
+}
+
+.life img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.time {
+    float: left;
+    font-size: 1.8rem;
+    font-weight: bold;
+}

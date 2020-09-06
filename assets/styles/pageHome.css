@@ -1,0 +1,90 @@
+.pageHome {
+    min-width: 30rem;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    margin-top: 4vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.container > h1 {
+    max-width: 30rem;
+    margin: 0 auto;
+    color: var(--color-text-red);
+    font-size: 6.4rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.container .level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .level h2 {
+    color: var(--color-text-gray);
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    position: relative;
+    transition: width 200ms ease-in-out;
+}
+
+.container .level h2::after {
+    content: '';
+    width: 100%;
+    height: 0.2rem;
+    background: var(--color-text-red);
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+}
+
+.container .level select {
+    width: 80%;
+    height: 4rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    border-radius: 0.8rem;
+    border: 1px solid var(--color-background-dark);
+    background: none;
+    color: var(--color-text-red);
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.container .level a {
+    margin-top: 2rem;
+    padding: 1.8rem 3.8rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-text-light);
+    background: var(--color-text-red);
+    border-radius: 0.8rem;
+    transition: background 300ms ease;
+}
+
+.container .level a:hover {
+    background: none;
+    color: var(--color-text-red);
+    border: 2px solid var(--color-text-red);
+}
