@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="../assets/styles/global.css">
     <link rel="stylesheet" href="../assets/styles/pageHome.css">
     <title>Game - Covid-19</title>
+
+    <script>
+        function startGame() {
+            var level = document.getElementById('level').value
+
+            if(level === '') {
+                alert('Selecione um Nível para jogar!')
+                return false
+            }
+
+            window.location.href = 'game.html?' + level;
+        }
+    </script>
 </head>
 <body>
     <header class="pageHome">
@@ -16,7 +29,8 @@
 
             <div class="level">
                 <h2>Nível</h2>
-                <select name="nivel" id="nivel">
+                <select name="nivel" id="level">
+                    <option value="">-- Selecione o nível --</option>
                     <option value="muito-facil">Muito facil</option>
                     <option value="facil">Facil</option>
                     <option value="normal">Normal</option>
@@ -25,7 +39,7 @@
                 </select>
                 
 
-                <a href="./game.html" class="btn-jogar">Jogar</a>
+                <button href="./game.html" class="btn-jogar" onclick="startGame()">Jogar</button>
             </div>
         </div>
     </header>

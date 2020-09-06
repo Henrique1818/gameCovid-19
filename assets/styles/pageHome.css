@@ -72,7 +72,7 @@
     padding: 0 1rem;
 }
 
-.container .level a {
+.container .level button {
     margin-top: 2rem;
     padding: 1.8rem 3.8rem;
     font-size: 1.8rem;
@@ -83,7 +83,7 @@
     transition: background 300ms ease;
 }
 
-.container .level a:hover {
+.container .level button:hover {
     background: none;
     color: var(--color-text-red);
     border: 2px solid var(--color-text-red);

@@ -17,6 +17,10 @@
     font-size: 60%;
 }
 
+html, input, select, option, textarea, button {
+    cursor: url("../image/vaccine.png") 30 30, auto;
+}
+
 html, body, :root {
     height: 100vh;
 }

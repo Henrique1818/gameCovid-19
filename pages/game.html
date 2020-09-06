@@ -13,20 +13,21 @@
 <body onresize="handleScreenDevice()">
     <div class="panel">
         <div class="life">
-            <img src="../assets/image/coracao_cheio.png" alt="coracao cheio">
-            <img src="../assets/image/coracao_cheio.png" alt="coracao cheio">
-            <img src="../assets/image/coracao_cheio.png" alt="coracao cheio">
-            <img src="../assets/image/coracao_cheio.png" alt="coracao cheio">
-            <img src="../assets/image/coracao_vazio.png" alt="coracao_vazio">
+            <img id="life1" src="../assets/image/coracao_cheio.png" alt="coracao cheio">
+            <img id="life2" src="../assets/image/coracao_cheio.png" alt="coracao cheio">
+            <img id="life3" src="../assets/image/coracao_cheio.png" alt="coracao cheio">
+            <img id="life4" src="../assets/image/coracao_cheio.png" alt="coracao cheio">
         </div>
 
-        <div class="time">Tempo Restante ?</div>
+        <div class="time">Tempo Restante: <span id="times"></span></div>
     </div>
 
     <script>
-        setInterval(() => {
+        document.getElementById('times').innerHTML = times
+
+        var createCovid = setInterval(() => {
             positionRandom()
-        }, 1000)
+        }, createCovidTime)
     </script>
 </body>
 </html>
